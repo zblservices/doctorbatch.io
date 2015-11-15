@@ -3,22 +3,22 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.ibm.doctorbatch.magicsauce</groupId>
+    <groupId>com.zblservices.doctorbatch.magicsauce</groupId>
     <artifactId>magicsauce</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>com.ibm.doctorbatch.magicsauce.websphere.mvs</groupId>
+  <groupId>com.zblservices.doctorbatch.magicsauce.websphere.mvs</groupId>
   <artifactId>magicsauce-websphere-mvs</artifactId>
   <name>Doctor Batch Magic Sauce - WAS Batch MVS</name>
   
   <dependencies>
     <dependency>
-      <groupId>com.ibm.doctorbatch.magicsauce.core</groupId>
+      <groupId>com.zblservices.doctorbatch.magicsauce.core</groupId>
       <artifactId>magicsauce-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.ibm.doctorbatch.magicsauce.websphere</groupId>
+      <groupId>com.zblservices.doctorbatch.magicsauce.websphere</groupId>
       <artifactId>magicsauce-websphere</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -29,7 +29,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.ibm.doctorbatch.magicsauce.mvs</groupId>
+      <groupId>com.zblservices.doctorbatch.magicsauce.mvs</groupId>
       <artifactId>magicsauce-mvs</artifactId>
       <version>${project.version}</version>
     </dependency>
