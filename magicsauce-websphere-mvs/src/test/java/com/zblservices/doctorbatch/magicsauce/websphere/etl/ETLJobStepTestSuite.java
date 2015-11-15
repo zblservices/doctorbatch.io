@@ -51,7 +51,7 @@ public class ETLJobStepTestSuite extends RDWRecordTestSuiteFixture {
 	 * Extends RDWRecordReader to expose an initialize(Properties) method
 	 * to this test suite.
 	 * 
-	 * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@tobat.ch)
+	 * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
 	 *
 	 */
 	public class ETLTestReader extends RDWRecordReader<TestRecord> {
@@ -64,7 +64,7 @@ public class ETLJobStepTestSuite extends RDWRecordTestSuiteFixture {
 	 * Extends RDWRecordWriter to expose an initialize(Properties) method
 	 * to this test suite.
 	 * 
-	 * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@tobat.ch)
+	 * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
 	 *
 	 */
 	public class ETLTestWriter extends RDWRecordWriter<TestRecord> {
@@ -78,7 +78,7 @@ public class ETLJobStepTestSuite extends RDWRecordTestSuiteFixture {
 	 * for this unit test suite, since we don't have a batch data stream 
 	 * manager in this context.
 	 * 
-	 * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@tobat.ch)
+	 * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
 	 */
 	public class ETLTestJobStep extends ETLJobStep<TestRecord, TestRecord>
 	{

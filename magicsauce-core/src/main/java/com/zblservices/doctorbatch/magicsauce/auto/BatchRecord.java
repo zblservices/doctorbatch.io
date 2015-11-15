@@ -19,7 +19,7 @@ package com.zblservices.doctorbatch.magicsauce.auto;
 /**
  * To use the AutoRecordParser, your ObjectType must implement this BatchRecord interface.
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@tobat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  * @param <RecordType> The type of the serialized form of the record ... (e.g., byte[], or String)
  */
 public interface BatchRecord<RecordType> {

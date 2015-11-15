@@ -21,7 +21,7 @@ package com.zblservices.doctorbatch.magicsauce.patterns;
  * StringReader reads string records, one per line, from an
  * input reader. 
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@tobat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  */
 public abstract class SingleLineRecordReader extends RegexPatternRecordReader {
 	private int lineNumber;

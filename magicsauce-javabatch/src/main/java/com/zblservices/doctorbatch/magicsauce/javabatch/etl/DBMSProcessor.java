@@ -29,7 +29,7 @@ import com.zblservices.doctorbatch.magicsauce.RecordProcessor;
  * ETLProcessor is a JSR-352 ItemProcessor implementation that utilizes a RecordProcessBehavior
  * implementation, specified by the RECORD_PROCESS_BEHAVIOR job step property, for its implementation.
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  *
  * @param <R> The input record type
  * @param <P> The output, processed record type

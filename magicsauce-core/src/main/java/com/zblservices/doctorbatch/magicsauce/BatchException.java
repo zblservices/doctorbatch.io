@@ -19,7 +19,7 @@ package com.zblservices.doctorbatch.magicsauce;
 /**
  * This is the base class for all runtime exceptions in this framework. 
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  *
  * @version 1.0
  */

@@ -33,7 +33,7 @@ import java.util.logging.Logger;
  * this framework. Job step implementations should refer to Reader<T> and 
  * Writer<T> interface instances instead of this class directly. 
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  *
  * @version 1.0
  */

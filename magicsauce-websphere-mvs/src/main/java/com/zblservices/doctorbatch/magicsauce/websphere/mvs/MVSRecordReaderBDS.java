@@ -31,7 +31,7 @@ import com.zblservices.doctorbatch.magicsauce.websphere.etl.Readable;
  * extend this class and override fetchRecord( ZFile, RecordParser ).</p>
  * 
  * @see AbstractMVSDataStream
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  * @param <T>
  */
 public class MVSRecordReaderBDS<T extends RecordBytes> extends AbstractMVSDataStream<T> implements Readable<T>, BatchDataStream {

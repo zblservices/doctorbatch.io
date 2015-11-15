@@ -74,7 +74,7 @@ import com.zblservices.doctorbatch.magicsauce.SkipRecordException;
  *   </job-step>
  * }</pre>
  *  
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  * @version 1.0
  */
 public abstract class AbstractSkipRecordJobStep extends AbstractJobStep {

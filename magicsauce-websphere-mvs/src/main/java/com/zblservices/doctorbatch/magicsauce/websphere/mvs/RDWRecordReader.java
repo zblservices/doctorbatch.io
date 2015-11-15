@@ -55,7 +55,7 @@ import com.zblservices.doctorbatch.magicsauce.websphere.etl.Readable;
  * word on the records. This allows this input BDS to process both fixed-block and variable-block record 
  * types.</p>
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch) *
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li) *
  * @param <T> The record type read by this reader
  */
 public class RDWRecordReader<T extends RecordBytes> extends AbstractBatchDataStream implements Readable<T>, BatchDataStream {

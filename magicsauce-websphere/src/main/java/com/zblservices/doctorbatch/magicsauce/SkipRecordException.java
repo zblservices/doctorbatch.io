@@ -25,7 +25,7 @@ import com.zblservices.doctorbatch.magicsauce.BatchException;
  * job step implementations, it provides job step resiliency for malformed input 
  * data. 
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  * @version 1.0
  */
 public class SkipRecordException extends BatchException {

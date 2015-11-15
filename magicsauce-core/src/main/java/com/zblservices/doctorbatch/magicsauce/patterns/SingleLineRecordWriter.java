@@ -27,7 +27,7 @@ import com.zblservices.doctorbatch.magicsauce.Writer;
  * StringWriter writes string records, one per line, to an
  * output writer.
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@tobat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  */
 public abstract class SingleLineRecordWriter implements Writer<String> {
 	private int lineNumber;

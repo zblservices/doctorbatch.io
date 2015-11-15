@@ -65,7 +65,7 @@ import com.zblservices.doctorbatch.magicsauce.MagicSauceLogger;
  * be allocated, it may not be cataloged prior to the subsequent open call, if your DSPATH refers to the dataset by name
  * rather than with the "dd:" syntax.</p>
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  * @param <T> The type of record this datastream interacts with.
  */
 public class MVSDataSetManager<T extends RecordBytes> implements DataSetManager<T> {

@@ -50,7 +50,7 @@ import com.zblservices.doctorbatch.magicsauce.RecordProcessor;
  * 
  * @param <S> The input XOM record type for this step.
  * @param <R> The output XOM record type for this step.
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  */
 public class BusinessRulesRecordProcessor<S, R> implements RecordProcessor<S, R> {
 	private String rulePath, inputParam, outputParam;

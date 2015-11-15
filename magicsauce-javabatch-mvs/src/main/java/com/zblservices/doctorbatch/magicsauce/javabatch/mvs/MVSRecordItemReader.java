@@ -64,7 +64,7 @@ import com.zblservices.doctorbatch.magicsauce.mvs.MVSRecordReader;
  * this job should allocate a new dataset ("alloc fi(batchdd1) da(DB2AFW.SAMPLES.INPUT.FILE01) new space((100,50),CYL)"), 
  * and scenarios where a pre-existing dataset should be used instead ("alloc fi(batchdd1) da(DB2AFW.SAMPLES.INPUT.FILE01) shr").</p>
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  * @param <T>
  */
 public class MVSRecordItemReader<T extends RecordBytes> extends AbstractMVSBatchArtifact<T> implements ItemReader {

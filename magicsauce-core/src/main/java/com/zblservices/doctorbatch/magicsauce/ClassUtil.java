@@ -21,7 +21,7 @@ package com.zblservices.doctorbatch.magicsauce;
 /**
  * Contains static utility methods used in a variety of places throughout this framework.
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  */
 public class ClassUtil {
 	

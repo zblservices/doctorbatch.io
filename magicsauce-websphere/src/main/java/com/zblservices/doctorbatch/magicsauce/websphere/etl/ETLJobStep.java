@@ -90,7 +90,7 @@ import static com.zblservices.doctorbatch.magicsauce.websphere.Constants.*;
  *  </job-step>
  * }</pre>
  * 
- * @author Timothy C. Fanelli (tfanelli@us.ibm.com, tim@fanel.li, doc@torbat.ch)
+ * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  *
  * @param <R> The type of input record object to process
  * @param <P> The type of the returned, processed record object.
