@@ -6,6 +6,11 @@ Doctor Batch's Magic Sauce is provides two key capabilities to batch application
 	- Readers and Writers using IBM JZOS to access record oriented data in MVS
 	- Processor implementations that invoke IBM Operational Decision Manager business rules applications
 
+## Help!
+Please send an e-mail to [tim@zblservices.com](mailto:tim@zblservices.com). 
+
+http://doc.torbat.ch
+
 ## Building from Source
 To build from source, you must import several IBM product libraries as third-party JARs into your Maven repository. These include:
 - IBM JZOS: jzos-2.4.jar, marshall-1.0.jar
@@ -20,8 +25,5 @@ The current release is available for download under the "dist/" folder
 ## Getting Started
 Documentation to get started quickly, along with a sample application, are coming very soon!
 
-## Help!
-Please send an e-mail to [drbatch@us.ibm.com](mailto:drbatch@us.ibm.com).
 
-http://doc.torbat.ch
 
