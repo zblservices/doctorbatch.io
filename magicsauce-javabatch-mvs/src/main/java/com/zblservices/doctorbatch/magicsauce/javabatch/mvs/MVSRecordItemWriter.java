@@ -21,12 +21,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.batch.api.BatchProperty;
 import javax.batch.api.chunk.ItemWriter;
-import javax.inject.Inject;
 
 import com.ibm.etools.marshall.RecordBytes;
-import com.zblservices.doctorbatch.magicsauce.ClassUtil;
 import com.zblservices.doctorbatch.magicsauce.mvs.MVSDataSetManager;
 import com.zblservices.doctorbatch.magicsauce.mvs.MVSRecordWriter;
 

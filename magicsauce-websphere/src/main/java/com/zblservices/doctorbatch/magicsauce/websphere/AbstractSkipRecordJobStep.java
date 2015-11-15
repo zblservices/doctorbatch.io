@@ -165,7 +165,6 @@ public abstract class AbstractSkipRecordJobStep extends AbstractJobStep {
 		});
 	}
 
-	// TODO need to explore if this is necessary
 	private void registerListedExceptions() {
 		String exceptionClassName = getProperty(SKIP_EXCEPTION, "");
 		if ( !exceptionClassName.isEmpty() )

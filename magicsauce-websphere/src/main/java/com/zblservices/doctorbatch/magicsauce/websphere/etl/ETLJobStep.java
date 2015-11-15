@@ -16,20 +16,20 @@
 
 package com.zblservices.doctorbatch.magicsauce.websphere.etl;
 
-import java.util.List;
+import static com.zblservices.doctorbatch.magicsauce.Constants.RECORD_PROCESSOR;
+import static com.zblservices.doctorbatch.magicsauce.websphere.Constants.READER;
+import static com.zblservices.doctorbatch.magicsauce.websphere.Constants.UNIT_OF_WORK_SIZE;
+import static com.zblservices.doctorbatch.magicsauce.websphere.Constants.WRITER;
+
 import java.util.ArrayList;
+import java.util.List;
 
 import com.ibm.batch.api.BatchJobStepInterface;
 import com.ibm.websphere.batch.BatchConstants;
 import com.zblservices.doctorbatch.magicsauce.BatchException;
 import com.zblservices.doctorbatch.magicsauce.ClassUtil;
-import com.zblservices.doctorbatch.magicsauce.Reader;
 import com.zblservices.doctorbatch.magicsauce.RecordProcessor;
-import com.zblservices.doctorbatch.magicsauce.Writer;
 import com.zblservices.doctorbatch.magicsauce.websphere.AbstractSkipRecordJobStep;
-
-import static com.zblservices.doctorbatch.magicsauce.Constants.*;
-import static com.zblservices.doctorbatch.magicsauce.websphere.Constants.*;
 
 /**
  * <p>ETLBatchJobStep is a batch job step implementations providing and Extract, 

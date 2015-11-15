@@ -18,12 +18,9 @@ package com.zblservices.doctorbatch.magicsauce.javabatch.mvs;
 
 import java.io.Serializable;
 
-import javax.batch.api.BatchProperty;
 import javax.batch.api.chunk.ItemReader;
-import javax.inject.Inject;
 
 import com.ibm.etools.marshall.RecordBytes;
-import com.zblservices.doctorbatch.magicsauce.ClassUtil;
 import com.zblservices.doctorbatch.magicsauce.mvs.MVSDataSetManager;
 import com.zblservices.doctorbatch.magicsauce.mvs.MVSRecordReader;
 
