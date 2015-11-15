@@ -15,9 +15,42 @@ http://doc.torbat.ch
 To build from source, you must import several IBM product libraries as third-party JARs into your Maven repository. These include:
 - IBM JZOS: jzos-2.4.jar, marshall-1.0.jar
 - IBM WebSphere's Batch Runtime: com.ibm.ws.batch.runtime-8.5.5.jar
-- IBM ODM's Libraries: jrules-engine.jar, jrules-res-execution.jar, jrules-res-session-java.jar, jrules-res-session-ejb3-WAS85.jar
+- IBM ODM's Libraries: jrules-res-session-java.jar
 
-Instructions on populating your dependency repository are coming soon.
+**jzos-2.4.jar** 
+```xml
+<dependency>
+  <groupId>com.ibm</groupId>
+  <artifactId>jzos</artifactId>
+  <version>2.4</version>
+</dependency>
+```
+**marshall-1.0**
+```xml
+<dependency>
+  <groupId>com.ibm</groupId>
+  <artifactId>marshall</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+**com.ibm.ws.batch.runtime-8.5.5.jar**
+```xml
+<dependency>
+  <groupId>com.ibm.websphere</groupId>
+  <artifactId>batch-runtime</artifactId>
+  <version>8.5.0.0</version>
+</dependency>
+```
+
+**jrules-res-session-java.jar**
+```xml
+<dependency>
+   <groupId>com.ibm</groupId>
+   <artifactId>jrules-res-session-java</artifactId>
+   <version>8.7.0.0</version>
+ </dependency>
+```
 
 ## Downloading the Magic Sauce Library 
 The current release is available for download under the "dist/" folder
