@@ -58,5 +58,6 @@ The current release is available for download under the "dist/" folder
 ## Getting Started
 Documentation to get started quickly, along with a sample application, are coming very soon!
 
-
+## About This Fork
+All future maintenance and development will be managed under this fork of the project. Tim Fanelli (aka, Doctor Batch), left IBM in October 2015 to form ZBL Services, Inc. As Tim was the sole maintainer of the project at IBM, the folks over at WASDev suggested that he fork the project, and retain maintenance over it. The original source at the WASDev repository should be considered deprecated.
 
