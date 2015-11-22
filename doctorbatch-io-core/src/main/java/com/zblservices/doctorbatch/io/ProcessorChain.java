@@ -38,7 +38,9 @@ public class ProcessorChain<InputRecordType, IntermediateRecordType, OutputRecor
 
 	@Override
 	public OutputRecordType process(InputRecordType record) {
-		return secondProcessor.process( firstProcessor.process( record ) );
+		return secondProcessor.process( 
+				firstProcessor.process( record ) 
+			);
 	}
 
 	/**
