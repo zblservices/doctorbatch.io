@@ -3,12 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.zblservices.doctorbatch.magicsauce</groupId>
-    <artifactId>magicsauce</artifactId>
+    <groupId>com.zblservices.doctorbatch.doctorbatch-io</groupId>
+    <artifactId>doctorbatch-io</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
   <groupId>com.zblservices.doctorbatch.io.javabatch.mvs</groupId>
-  <artifactId>magicsauce-javabatch-mvs</artifactId>
+  <artifactId>doctorbatch-io-javabatch-mvs</artifactId>
   <name>Doctor Batch Magic Sauce - Java Batch MVS</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -20,7 +20,7 @@
     </dependency>
     <dependency>
       <groupId>com.zblservices.doctorbatch.io.mvs</groupId>
-      <artifactId>magicsauce-mvs</artifactId>
+      <artifactId>doctorbatch-io-mvs</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

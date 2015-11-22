@@ -3,19 +3,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.zblservices.doctorbatch.magicsauce</groupId>
-    <artifactId>magicsauce</artifactId>
+    <groupId>com.zblservices.doctorbatch.doctorbatch-io</groupId>
+    <artifactId>doctorbatch-io</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
   <groupId>com.zblservices.doctorbatch.io.odm</groupId>
-  <artifactId>magicsauce-odm</artifactId>
+  <artifactId>doctorbatch-io-odm</artifactId>
   <name>Doctor Batch Magic Sauce - ODM</name>
 
   <dependencies>
    <dependency>
       <groupId>com.zblservices.doctorbatch.io.core</groupId>
-      <artifactId>magicsauce-core</artifactId>
+      <artifactId>doctorbatch-io-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

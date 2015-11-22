@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.zblservices.doctorbatch.magicsauce</groupId>
-	<artifactId>magicsauce</artifactId>
+	<groupId>com.zblservices.doctorbatch.doctorbatch-io</groupId>
+	<artifactId>doctorbatch-io</artifactId>
 	<name>Doctor Batch Magic Sauce</name>
 	<packaging>pom</packaging>
 	<version>0.1-SNAPSHOT</version>
@@ -20,13 +20,13 @@
 	</properties>
 
 	<modules>
-		<module>magicsauce-core</module>
-		<module>magicsauce-websphere</module>
-		<module>magicsauce-javabatch</module>
-		<module>magicsauce-odm</module>
-		<module>magicsauce-mvs</module>
-		<module>magicsauce-javabatch-mvs</module>
-		<module>magicsauce-websphere-mvs</module>
+		<module>doctorbatch-io-core</module>
+		<module>doctorbatch-io-websphere</module>
+		<module>doctorbatch-io-javabatch</module>
+		<module>doctorbatch-io-odm</module>
+		<module>doctorbatch-io-mvs</module>
+		<module>doctorbatch-io-javabatch-mvs</module>
+		<module>doctorbatch-io-websphere-mvs</module>
 	</modules>
 
 	<build>
