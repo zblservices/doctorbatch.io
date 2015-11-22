@@ -7,18 +7,18 @@
     <artifactId>magicsauce</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>com.zblservices.doctorbatch.magicsauce.websphere.mvs</groupId>
+  <groupId>com.zblservices.doctorbatch.io.websphere.mvs</groupId>
   <artifactId>magicsauce-websphere-mvs</artifactId>
   <name>Doctor Batch Magic Sauce - WAS Batch MVS</name>
   
   <dependencies>
     <dependency>
-      <groupId>com.zblservices.doctorbatch.magicsauce.core</groupId>
+      <groupId>com.zblservices.doctorbatch.io.core</groupId>
       <artifactId>magicsauce-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.zblservices.doctorbatch.magicsauce.websphere</groupId>
+      <groupId>com.zblservices.doctorbatch.io.websphere</groupId>
       <artifactId>magicsauce-websphere</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -29,7 +29,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.zblservices.doctorbatch.magicsauce.mvs</groupId>
+      <groupId>com.zblservices.doctorbatch.io.mvs</groupId>
       <artifactId>magicsauce-mvs</artifactId>
       <version>${project.version}</version>
     </dependency>
