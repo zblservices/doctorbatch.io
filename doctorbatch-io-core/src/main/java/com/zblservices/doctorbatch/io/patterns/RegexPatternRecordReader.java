@@ -27,7 +27,7 @@ import com.zblservices.doctorbatch.io.Reader;
  * RegexPatternRecordReader uses an regular expression pattern to match record 
  * delimiters in an input source reader.
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  *
  */
 public abstract class RegexPatternRecordReader implements Reader<String>{

@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * The interface for all reader implementations.
  *  
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  */
 public interface Writer<T> {
 	public void open( Serializable state );

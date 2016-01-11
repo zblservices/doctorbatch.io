@@ -7,7 +7,7 @@
 	- Processor implementations that invoke IBM Operational Decision Manager business rules applications
 
 ## Help!
-Please send an e-mail to [tim@zblservices.com](mailto:tim@zblservices.com).
+Please send an e-mail to [tfanelli@zblservices.com](mailto:tfanelli@zblservices.com).
 
 http://doc.torbat.ch
 

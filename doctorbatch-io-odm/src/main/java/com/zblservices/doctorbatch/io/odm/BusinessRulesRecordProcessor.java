@@ -51,7 +51,7 @@ import com.zblservices.doctorbatch.io.RecordProcessor;
  * 
  * @param <S> The input XOM record type for this step.
  * @param <R> The output XOM record type for this step.
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  */
 public class BusinessRulesRecordProcessor<S, R> implements RecordProcessor<S, R> {
 	private String rulePath, inputParam, outputParam;

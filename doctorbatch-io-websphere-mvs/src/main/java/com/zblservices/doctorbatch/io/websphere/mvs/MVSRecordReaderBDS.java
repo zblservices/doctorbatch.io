@@ -33,7 +33,7 @@ import com.zblservices.doctorbatch.io.mvs.MVSRecordReader;
  * extend this class and override fetchRecord( ZFile, RecordParser ).</p>
  * 
  * @see AbstractMVSDataStream
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  * @param <T>
  */
 public class MVSRecordReaderBDS<T extends RecordBytes> extends AbstractMVSDataStream<T> implements Reader<T>, BatchDataStream {

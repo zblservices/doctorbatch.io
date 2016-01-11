@@ -57,7 +57,7 @@ import com.zblservices.doctorbatch.io.websphere.AbstractBatchDataStream;
  * word on the records. This allows this input BDS to process both fixed-block and variable-block record 
  * types.</p>
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li) *
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li) *
  * @param <T> The record type read by this reader
  */
 public class RDWRecordReader<T extends RecordBytes> extends AbstractBatchDataStream implements Reader<T>, BatchDataStream {

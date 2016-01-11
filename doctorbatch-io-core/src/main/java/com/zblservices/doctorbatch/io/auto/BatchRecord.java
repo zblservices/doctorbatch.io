@@ -20,7 +20,7 @@ package com.zblservices.doctorbatch.io.auto;
 /**
  * To use the AutoRecordParser, your ObjectType must implement this BatchRecord interface.
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  * @param <RecordType> The type of the serialized form of the record ... (e.g., byte[], or String)
  */
 public interface BatchRecord<RecordType> {

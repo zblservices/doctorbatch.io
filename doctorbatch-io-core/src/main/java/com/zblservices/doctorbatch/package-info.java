@@ -1,7 +1,7 @@
 /**
  * <h1>About Doctor Batch, and this library</h1>
  * <p>"Doctor Batch" is Tim Fanelli. For questions, comments, or help using the com.ibm.doctorbatch 
- * resources, please contact Tim directly: tim@zblservices.com, tim@fanel.li, or doc@torbat.ch</p>
+ * resources, please contact Tim directly: tfanelli@zblservices.com, tim@fanel.li, or doc@torbat.ch</p>
  * <p>The Doctor Batch's Magic Sauce library provides an abstraction layer for developing batch applications in the 
  * java programming language independent of the specific batch runtime provider, and provides adapters to consume 
  * MagicSauce applications in both WebSphere Application Server's Modern Batch and WebSphere Liberty Profile's Java EE Batch

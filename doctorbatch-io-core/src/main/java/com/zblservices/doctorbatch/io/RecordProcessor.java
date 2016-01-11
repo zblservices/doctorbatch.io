@@ -24,7 +24,7 @@ import java.util.Properties;
  * for use in this framework's JobStepInterface implementation classes, such 
  * as ETLBatchJobStep. 
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  *
  * @param <InputRecordType> The type of input record object to process
  * @param <OutputRecordType> The type of the returned, processed record object.

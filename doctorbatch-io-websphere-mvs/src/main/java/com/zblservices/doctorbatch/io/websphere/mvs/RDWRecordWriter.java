@@ -44,7 +44,7 @@ import com.zblservices.doctorbatch.io.websphere.AbstractBatchDataStream;
  * This batch data stream writes record structures to a flat on Unix, Linux, or Windows platforms. The 
  * output file is written as a native z/OS variable-block record format. 
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  *
  * @param <T> The record type written by this batch data stream implementation.
  */

@@ -33,7 +33,7 @@ import com.zblservices.doctorbatch.io.mvs.RecordBytesParser;
  * per invocation of read(). To customize that behavior, extend this class and override the fetchRecord(...)
  * method. Requires the following ItemReader properites:
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  * @param <T>
  */
 public  class MVSRecordReader<T extends RecordBytes> implements Reader<T> {

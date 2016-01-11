@@ -26,7 +26,7 @@ import com.zblservices.doctorbatch.io.BatchException;
  * job step implementations, it provides job step resiliency for malformed input 
  * data. 
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  * @version 1.0
  */
 public class SkipRecordException extends BatchException {

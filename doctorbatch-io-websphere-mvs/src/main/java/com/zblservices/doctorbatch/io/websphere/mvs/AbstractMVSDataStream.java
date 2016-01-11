@@ -51,7 +51,7 @@ import com.zblservices.doctorbatch.io.websphere.AbstractBatchDataStream;
  * be allocated, it may not be cataloged prior to the subsequent open call, if your DSPATH refers to the dataset by name
  * rather than with the "dd:" syntax.</p>
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  * @param <T> The type of record this datastream interacts with.
  */
 public abstract class AbstractMVSDataStream<T extends RecordBytes> extends AbstractBatchDataStream {

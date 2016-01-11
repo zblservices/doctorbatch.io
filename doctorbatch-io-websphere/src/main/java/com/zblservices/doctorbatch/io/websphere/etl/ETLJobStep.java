@@ -93,7 +93,7 @@ import com.zblservices.doctorbatch.io.websphere.AbstractSkipRecordJobStep;
  *  </job-step>
  * }</pre>
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  *
  * @param <R> The type of input record object to process
  * @param <P> The type of the returned, processed record object.

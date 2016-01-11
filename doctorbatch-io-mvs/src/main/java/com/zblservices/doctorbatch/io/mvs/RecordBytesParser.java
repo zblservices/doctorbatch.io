@@ -47,7 +47,7 @@ import com.zblservices.doctorbatch.io.RecordParser;
  * the entire job run, the instance returned by "getRecord()" should never be cached or stored between 
  * invocations.</p>
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  *
  */
 public class RecordBytesParser<T extends RecordBytes> implements RecordParser<T, byte[]> {

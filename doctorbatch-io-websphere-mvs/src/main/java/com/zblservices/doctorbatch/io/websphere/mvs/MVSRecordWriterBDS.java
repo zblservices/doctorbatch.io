@@ -34,7 +34,7 @@ import com.zblservices.doctorbatch.io.mvs.MVSRecordWriter;
  * extend this class and override fetchRecord( ZFile, RecordParser ).</p>
  * 
  * @see AbstractMVSDataStream
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  * @param <T>
  */
 public class MVSRecordWriterBDS<T extends RecordBytes> extends AbstractMVSDataStream<T> implements Writer<T>, BatchDataStream {

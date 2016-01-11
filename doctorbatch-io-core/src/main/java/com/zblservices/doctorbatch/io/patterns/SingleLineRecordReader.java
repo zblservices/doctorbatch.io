@@ -22,7 +22,7 @@ package com.zblservices.doctorbatch.io.patterns;
  * StringReader reads string records, one per line, from an
  * input reader. 
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  */
 public abstract class SingleLineRecordReader extends RegexPatternRecordReader {
 	private int lineNumber;

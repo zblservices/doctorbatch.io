@@ -62,7 +62,7 @@ import com.zblservices.doctorbatch.io.mvs.MVSRecordReader;
  * this job should allocate a new dataset ("alloc fi(batchdd1) da(DB2AFW.SAMPLES.INPUT.FILE01) new space((100,50),CYL)"), 
  * and scenarios where a pre-existing dataset should be used instead ("alloc fi(batchdd1) da(DB2AFW.SAMPLES.INPUT.FILE01) shr").</p>
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  * @param <T>
  */
 public class MVSRecordItemReader<T extends RecordBytes> extends AbstractMVSBatchArtifact<T> implements ItemReader {

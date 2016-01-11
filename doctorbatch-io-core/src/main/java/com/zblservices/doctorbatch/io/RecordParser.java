@@ -27,7 +27,7 @@ import java.util.Properties;
  * <code>public String parseObjectToRecord( Customer record )</code> in which you translate the 
  * Customer instance back into a String for serialization.</p> 
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  *
  * @version 1.0
 

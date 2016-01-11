@@ -20,7 +20,7 @@ package com.zblservices.doctorbatch.io;
 /**
  * This is the base class for all runtime exceptions in this framework. 
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  *
  * @version 1.0
  */

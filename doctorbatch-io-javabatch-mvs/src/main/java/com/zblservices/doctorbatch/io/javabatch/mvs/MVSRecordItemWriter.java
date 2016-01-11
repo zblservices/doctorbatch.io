@@ -30,7 +30,7 @@ import com.zblservices.doctorbatch.io.mvs.MVSRecordWriter;
 
 /**
 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  * @param <T>
  */
 public class MVSRecordItemWriter<T extends RecordBytes> extends AbstractMVSBatchArtifact<T> implements ItemWriter {

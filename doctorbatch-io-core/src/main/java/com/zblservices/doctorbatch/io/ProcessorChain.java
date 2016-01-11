@@ -6,7 +6,7 @@ import java.util.Properties;
  * ProcessorChain is a composite record processor that chains two RecordProcessors together for complex 
  * workflow management.
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com)
  *
  * @param <InputRecordType> The input record type.
  * @param <IntermediateRecordType> The record type which is the output of the first processor, and input to the second processor

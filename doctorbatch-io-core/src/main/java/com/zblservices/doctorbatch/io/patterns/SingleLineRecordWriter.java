@@ -28,7 +28,7 @@ import com.zblservices.doctorbatch.io.Writer;
  * StringWriter writes string records, one per line, to an
  * output writer.
  * 
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  */
 public abstract class SingleLineRecordWriter implements Writer<String> {
 	private int lineNumber;

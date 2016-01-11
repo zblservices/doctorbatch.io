@@ -32,7 +32,7 @@ import com.zblservices.doctorbatch.io.RecordParser;
  * RECORD_PARSER_CLASSNAME property to your job step's properties.
  *  
  * @see RecordParser
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  *
  * @param <ObjectType> The type for the in-memory representation of your record structure
  * @param <RecordType> The type for the serialized representation of your record structure

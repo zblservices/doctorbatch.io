@@ -75,7 +75,7 @@ import com.zblservices.doctorbatch.io.SkipRecordException;
  *   </job-step>
  * }</pre>
  *  
- * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
+ * @author Timothy C. Fanelli (tfanelli@zblservices.com, tim@fanel.li)
  * @version 1.0
  */
 public abstract class AbstractSkipRecordJobStep extends AbstractJobStep {
