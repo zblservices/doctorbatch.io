@@ -17,14 +17,15 @@
 
 package com.zblservices.doctorbatch.io.websphere.mvs;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Properties;
 
 import com.ibm.etools.marshall.RecordBytes;
 import com.ibm.websphere.batch.BatchDataStream;
 import com.zblservices.doctorbatch.io.ClassUtil;
+import com.zblservices.doctorbatch.io.Writer;
 import com.zblservices.doctorbatch.io.mvs.MVSRecordWriter;
-import com.zblservices.doctorbatch.io.websphere.etl.Writable;
 
 /**
  * <p>This batch data stream reads records from an MVS data set. See {@link AbstractMVSDataStream} for
@@ -36,7 +37,7 @@ import com.zblservices.doctorbatch.io.websphere.etl.Writable;
  * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  * @param <T>
  */
-public class MVSRecordWriterBDS<T extends RecordBytes> extends AbstractMVSDataStream<T> implements Writable<T>, BatchDataStream {
+public class MVSRecordWriterBDS<T extends RecordBytes> extends AbstractMVSDataStream<T> implements Writer<T>, BatchDataStream {
 	private MVSRecordWriter<T> magicSauceWriter;
 	private String magicSauceReaderClassName;
 	private long recordCount;
@@ -66,12 +67,23 @@ public class MVSRecordWriterBDS<T extends RecordBytes> extends AbstractMVSDataSt
 	 */
 	@Override
 	public void open() {
-		magicSauceWriter.open(null);
+		this.open(null);
+	}
+
+
+	@Override
+	public void open(Serializable state) {
+		magicSauceWriter.open(state);
 	}
 	
 	@Override
 	public void close() {
 		magicSauceWriter.close();
+	}
+	
+	@Override
+	public Serializable getState() {
+		return externalizeCheckpointInformation();
 	}
 	
 	@Override
@@ -92,5 +104,6 @@ public class MVSRecordWriterBDS<T extends RecordBytes> extends AbstractMVSDataSt
 		for ( T t : records )
 			write(t);
 	}
+
 
 }

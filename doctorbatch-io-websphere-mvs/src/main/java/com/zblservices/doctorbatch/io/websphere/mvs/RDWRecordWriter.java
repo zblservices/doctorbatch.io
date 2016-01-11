@@ -27,6 +27,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.RandomAccessFile;
+import java.io.Serializable;
 import java.util.List;
 import java.util.Properties;
 
@@ -35,9 +36,9 @@ import com.ibm.jzos.RDWOutputRecordStream;
 import com.ibm.websphere.batch.BatchDataStream;
 import com.zblservices.doctorbatch.io.BatchException;
 import com.zblservices.doctorbatch.io.ClassUtil;
+import com.zblservices.doctorbatch.io.Writer;
 import com.zblservices.doctorbatch.io.mvs.RecordBytesParser;
 import com.zblservices.doctorbatch.io.websphere.AbstractBatchDataStream;
-import com.zblservices.doctorbatch.io.websphere.etl.Writable;
 
 /**
  * This batch data stream writes record structures to a flat on Unix, Linux, or Windows platforms. The 
@@ -47,7 +48,7 @@ import com.zblservices.doctorbatch.io.websphere.etl.Writable;
  *
  * @param <T> The record type written by this batch data stream implementation.
  */
-public class RDWRecordWriter<T extends RecordBytes> extends AbstractBatchDataStream implements Writable<T>, BatchDataStream {
+public class RDWRecordWriter<T extends RecordBytes> extends AbstractBatchDataStream implements Writer<T>, BatchDataStream {
 
 	private RecordBytesParser<T> recordParser;
 	
@@ -105,19 +106,7 @@ public class RDWRecordWriter<T extends RecordBytes> extends AbstractBatchDataStr
 	
 	@Override
 	public void open() {
-		try {
-			try {
-				outputFile = new RandomAccessFile( fileName, "rw" );
-			    fileOut = new FileOutputStream(outputFile.getFD());
-				rdwOutputStream = new RDWOutputRecordStream(fileOut);
-			} catch (FileNotFoundException e) {
-				throw new BatchException(e);
-			}
-			
-
-		} catch(IOException ioEx) {
-			throw new BatchException("Unexpected error while opening file", ioEx.getCause());
-		}
+		this.open( null );
 	}
 
 	@Override
@@ -208,6 +197,26 @@ public class RDWRecordWriter<T extends RecordBytes> extends AbstractBatchDataStr
 	public void write(List<? extends T> records) {
 		for ( T t : records )
 			write(t);
+	}
+
+	@Override
+	public void open(Serializable state) {
+		try {
+			outputFile = new RandomAccessFile( fileName, "rw" );
+		    fileOut = new FileOutputStream(outputFile.getFD());
+			rdwOutputStream = new RDWOutputRecordStream(fileOut);
+			
+			internalizeCheckpointInformation( state.toString() );
+		} catch (FileNotFoundException e) {
+			throw new BatchException(e);
+		} catch(IOException ioEx) {
+			throw new BatchException("Unexpected error while opening file", ioEx.getCause());
+		}		
+	}
+	
+	@Override
+	public Serializable getState() {
+		return externalizeCheckpointInformation();
 	}
 
 

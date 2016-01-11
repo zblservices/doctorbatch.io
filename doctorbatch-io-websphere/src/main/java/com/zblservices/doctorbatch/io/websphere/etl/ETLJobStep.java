@@ -29,7 +29,9 @@ import com.ibm.batch.api.BatchJobStepInterface;
 import com.ibm.websphere.batch.BatchConstants;
 import com.zblservices.doctorbatch.io.BatchException;
 import com.zblservices.doctorbatch.io.ClassUtil;
+import com.zblservices.doctorbatch.io.Reader;
 import com.zblservices.doctorbatch.io.RecordProcessor;
+import com.zblservices.doctorbatch.io.Writer;
 import com.zblservices.doctorbatch.io.websphere.AbstractSkipRecordJobStep;
 
 /**
@@ -99,8 +101,8 @@ import com.zblservices.doctorbatch.io.websphere.AbstractSkipRecordJobStep;
 
 public class ETLJobStep<R,P> extends AbstractSkipRecordJobStep implements BatchJobStepInterface
 {
-	private Readable<R> reader;
-	private Writable<P> writer;
+	private Reader<R> reader;
+	private Writer<P> writer;
 	private int unitOfWorkSize = 1;
 	private RecordProcessor<R,P> recordProcessor;
 	

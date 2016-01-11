@@ -26,6 +26,7 @@ import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.Properties;
 
 import com.ibm.etools.marshall.RecordBytes;
@@ -33,9 +34,9 @@ import com.ibm.jzos.RDWInputRecordStream;
 import com.ibm.websphere.batch.BatchDataStream;
 import com.zblservices.doctorbatch.io.BatchException;
 import com.zblservices.doctorbatch.io.ClassUtil;
+import com.zblservices.doctorbatch.io.Reader;
 import com.zblservices.doctorbatch.io.mvs.RecordBytesParser;
 import com.zblservices.doctorbatch.io.websphere.AbstractBatchDataStream;
-import com.zblservices.doctorbatch.io.websphere.etl.Readable;
 
 /**
  * <p>This data stream reads records from MVS datasets which have been FTP'd to Unix, Linux, or Windows
@@ -59,7 +60,7 @@ import com.zblservices.doctorbatch.io.websphere.etl.Readable;
  * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li) *
  * @param <T> The record type read by this reader
  */
-public class RDWRecordReader<T extends RecordBytes> extends AbstractBatchDataStream implements Readable<T>, BatchDataStream {
+public class RDWRecordReader<T extends RecordBytes> extends AbstractBatchDataStream implements Reader<T>, BatchDataStream {
 
 	private RecordBytesParser<T> recordParser;
 	 
@@ -112,15 +113,28 @@ public class RDWRecordReader<T extends RecordBytes> extends AbstractBatchDataStr
 	
 	@Override
 	public void open() {
+		this.open(0);
+	}
+
+	@Override
+	public void open(Serializable args) {
 		try {
 			BufferedInputStream bufferedInStream = new BufferedInputStream(new FileInputStream(fileName));
 			this.rdwInputStream = new RDWInputRecordStream( bufferedInStream );
 			this.currentRecordInd = 0;
+			
+			internalizeCheckpointInformation( args.toString() );
+			
 		} catch(IOException ioEx) {
 			throw new BatchException("Unexpected IO error while opening the stream", ioEx.getCause());
 		}
 	}
 
+	@Override
+	public Serializable getState() {
+		return externalizeCheckpointInformation();
+	}
+	
 	@Override
 	public void close() {
 		try {
@@ -209,5 +223,6 @@ public class RDWRecordReader<T extends RecordBytes> extends AbstractBatchDataStr
 			throw new BatchException("Unexpected error while setting position", ioe.getCause());
 		}
 	}
+
 	
 }

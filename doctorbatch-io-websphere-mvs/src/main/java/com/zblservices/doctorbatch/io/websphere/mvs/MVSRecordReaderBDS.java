@@ -17,13 +17,14 @@
 
 package com.zblservices.doctorbatch.io.websphere.mvs;
 
+import java.io.Serializable;
 import java.util.Properties;
 
 import com.ibm.etools.marshall.RecordBytes;
 import com.ibm.websphere.batch.BatchDataStream;
 import com.zblservices.doctorbatch.io.ClassUtil;
+import com.zblservices.doctorbatch.io.Reader;
 import com.zblservices.doctorbatch.io.mvs.MVSRecordReader;
-import com.zblservices.doctorbatch.io.websphere.etl.Readable;
 
 /**
  * <p>This batch data stream reads records from an MVS data set. See {@link AbstractMVSDataStream} for
@@ -35,7 +36,7 @@ import com.zblservices.doctorbatch.io.websphere.etl.Readable;
  * @author Timothy C. Fanelli (tim@zblservices.com, tim@fanel.li)
  * @param <T>
  */
-public class MVSRecordReaderBDS<T extends RecordBytes> extends AbstractMVSDataStream<T> implements Readable<T>, BatchDataStream {
+public class MVSRecordReaderBDS<T extends RecordBytes> extends AbstractMVSDataStream<T> implements Reader<T>, BatchDataStream {
 	private MVSRecordReader<T> magicSauceReader;
 	private String magicSauceReaderClassName;
 	private long recordCount;
@@ -65,7 +66,13 @@ public class MVSRecordReaderBDS<T extends RecordBytes> extends AbstractMVSDataSt
 	 */
 	@Override
 	public void open() {
-		magicSauceReader.open(null);
+		this.open(null);
+	}
+	
+
+	@Override
+	public void open(Serializable args) {
+		magicSauceReader.open( args );
 	}
 	
 	@Override
@@ -79,11 +86,15 @@ public class MVSRecordReaderBDS<T extends RecordBytes> extends AbstractMVSDataSt
 	}
 
 	@Override
+	public Serializable getState() {
+		return externalizeCheckpointInformation();
+	}
+
+	@Override
 	public void internalizeCheckpointInformation(String token) {
 		long targetRecordCount = Long.parseLong( token );
 		
 		for ( long i = recordCount; i < targetRecordCount; ++i )
 			read();
 	}
-
 }
