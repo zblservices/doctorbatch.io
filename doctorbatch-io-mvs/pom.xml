@@ -9,7 +9,7 @@
   </parent>
   <groupId>com.zblservices.doctorbatch</groupId>
   <artifactId>doctorbatch-io-mvs</artifactId>
-  <name>Doctor Batch Magic Sauce - MVS</name>
+  <name>Doctor Batch IO - MVS</name>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

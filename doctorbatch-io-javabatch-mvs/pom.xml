@@ -9,7 +9,7 @@
   </parent>
   <groupId>com.zblservices.doctorbatch</groupId>
   <artifactId>doctorbatch-io-javabatch-mvs</artifactId>
-  <name>Doctor Batch Magic Sauce - Java Batch MVS</name>
+  <name>Doctor Batch IO - Java Batch MVS</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>

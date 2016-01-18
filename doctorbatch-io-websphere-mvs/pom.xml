@@ -9,7 +9,7 @@
   </parent>
   <groupId>com.zblservices.doctorbatch</groupId>
   <artifactId>doctorbatch-io-websphere-mvs</artifactId>
-  <name>Doctor Batch Magic Sauce - WAS Batch MVS</name>
+  <name>Doctor Batch IO - WAS Batch MVS</name>
   
   <dependencies>
     <dependency>

@@ -12,7 +12,7 @@
   <artifactId>doctorbatch-io-core</artifactId>
   <packaging>jar</packaging>
 
-  <name>Doctor Batch Magic Sauce - Core</name>
+  <name>Doctor Batch IO - Core</name>
 
   <dependencies>
   </dependencies>

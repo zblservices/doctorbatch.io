@@ -10,7 +10,7 @@
 
   <groupId>com.zblservices.doctorbatch</groupId>
   <artifactId>doctorbatch-io-odm</artifactId>
-  <name>Doctor Batch Magic Sauce - ODM</name>
+  <name>Doctor Batch IO - ODM</name>
 
   <dependencies>
    <dependency>

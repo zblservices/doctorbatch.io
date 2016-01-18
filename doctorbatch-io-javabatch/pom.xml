@@ -12,7 +12,7 @@
   <artifactId>doctorbatch-io-javabatch</artifactId>
   <packaging>jar</packaging>
 
-  <name>Doctor Batch Magic Sauce - Java Batch</name>
+  <name>Doctor Batch IO - Java Batch</name>
 
   <dependencies>
     <dependency>
