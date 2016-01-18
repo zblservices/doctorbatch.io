@@ -11,7 +11,7 @@
 						<property name="MVS_RECORDBYTES_CLASSNAME" value="com.ibm.bigbluebank.model.DepositRecord" />
 					</properties>
 				</reader>
-				<processor ref="com.zblservices.doctorbatch.io.SimpleProcessor">
+				<processor ref="batchFWProcessor">
 					<properties>
 						<property name="RECORD_PROCESSOR" value="com.ibm.bigbluebank.ClearingBehavior" />
 					</properties>
