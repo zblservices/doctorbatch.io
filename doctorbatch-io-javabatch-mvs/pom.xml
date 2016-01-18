@@ -7,7 +7,7 @@
     <artifactId>doctorbatch-io</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>com.zblservices.doctorbatch.io.javabatch.mvs</groupId>
+  <groupId>com.zblservices.doctorbatch</groupId>
   <artifactId>doctorbatch-io-javabatch-mvs</artifactId>
   <name>Doctor Batch Magic Sauce - Java Batch MVS</name>
   <url>http://maven.apache.org</url>
@@ -19,7 +19,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.zblservices.doctorbatch.io.mvs</groupId>
+      <groupId>com.zblservices.doctorbatch</groupId>
       <artifactId>doctorbatch-io-mvs</artifactId>
       <version>${project.version}</version>
     </dependency>

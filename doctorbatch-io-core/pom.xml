@@ -8,7 +8,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.zblservices.doctorbatch.io.core</groupId>
+  <groupId>com.zblservices.doctorbatch</groupId>
   <artifactId>doctorbatch-io-core</artifactId>
   <packaging>jar</packaging>
 

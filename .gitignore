@@ -13,3 +13,4 @@ RemoteSystemsTempFiles
 .metadata
 .settings
 .classpath
+.factorypath

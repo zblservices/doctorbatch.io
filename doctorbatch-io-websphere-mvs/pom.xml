@@ -7,18 +7,18 @@
     <artifactId>doctorbatch-io</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>com.zblservices.doctorbatch.io.websphere.mvs</groupId>
+  <groupId>com.zblservices.doctorbatch</groupId>
   <artifactId>doctorbatch-io-websphere-mvs</artifactId>
   <name>Doctor Batch Magic Sauce - WAS Batch MVS</name>
   
   <dependencies>
     <dependency>
-      <groupId>com.zblservices.doctorbatch.io.core</groupId>
+      <groupId>com.zblservices.doctorbatch</groupId>
       <artifactId>doctorbatch-io-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.zblservices.doctorbatch.io.websphere</groupId>
+      <groupId>com.zblservices.doctorbatch</groupId>
       <artifactId>doctorbatch-io-websphere</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -29,7 +29,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.zblservices.doctorbatch.io.mvs</groupId>
+      <groupId>com.zblservices.doctorbatch</groupId>
       <artifactId>doctorbatch-io-mvs</artifactId>
       <version>${project.version}</version>
     </dependency>

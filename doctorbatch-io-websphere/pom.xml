@@ -8,7 +8,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.zblservices.doctorbatch.io.websphere</groupId>
+  <groupId>com.zblservices.doctorbatch</groupId>
   <artifactId>doctorbatch-io-websphere</artifactId>
   <packaging>jar</packaging>
 
@@ -16,7 +16,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.zblservices.doctorbatch.io.core</groupId>
+      <groupId>com.zblservices.doctorbatch</groupId>
       <artifactId>doctorbatch-io-core</artifactId>
       <version>${project.version}</version>
     </dependency>
