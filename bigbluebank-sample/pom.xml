@@ -7,14 +7,14 @@
   <parent>
     <groupId>com.zblservices.doctorbatch</groupId>
     <artifactId>doctorbatch-io</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
 
 	<groupId>com.zblservices.bigbluebank</groupId>
 	<artifactId>bigbluebank</artifactId>
 	<name>Doctor Batch IO - Big Blue Bank Sample</name>
 	<packaging>pom</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<organization>
 		<name>ZBL Services, Inc. (tfanelli@zblservices.com)</name>

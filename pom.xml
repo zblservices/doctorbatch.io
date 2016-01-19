@@ -7,12 +7,31 @@
 	<groupId>com.zblservices.doctorbatch</groupId>
 	<artifactId>doctorbatch-io</artifactId>
 	<name>Doctor Batch IO</name>
+	<description>Doctor Batch IO is an Apache Licensed library for development of JSR-352 Batch applications; with targetted cross-deployment to IBM WebSphere Application Server Batch.</description>
+	<url>http://doctorbatch.io</url>
 	<packaging>pom</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0</version>
+
+	<developers>
+		<developer>
+			<organization>ZBL Services, Inc.</organization>
+			<email>tfanelli@zblservices.com</email>
+			<url>http://zblservices.com</url>
+		</developer>
+	</developers>
 
 	<organization>
 		<name>ZBL Services, Inc. (tfanelli@zblservices.com)</name>
+		<url>http://zblservices.com</url>
 	</organization>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<properties>
 		<timestamp>${maven.build.timestamp}</timestamp>
@@ -31,6 +50,13 @@
 		<module>bigbluebank-sample</module>
 	</modules>
 
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -41,7 +67,7 @@
 				<configuration>
 					<serverId>ossrh</serverId>
 					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+					<autoReleaseAfterClose>false</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -113,4 +139,7 @@
 		</pluginManagement>
 	</build>
 
+	<scm>
+		<url>https://github.com/zblservices/doctorbatch.io</url>
+	</scm>
 </project>
