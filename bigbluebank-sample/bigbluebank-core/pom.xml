@@ -7,7 +7,7 @@
 		<dependency>
 			<groupId>com.zblservices.doctorbatch</groupId>
 			<artifactId>doctorbatch-io-core</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.ibm</groupId>
@@ -52,6 +52,6 @@
 	<parent>
 		<groupId>com.zblservices.bigbluebank</groupId>
 		<artifactId>bigbluebank</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 </project>
