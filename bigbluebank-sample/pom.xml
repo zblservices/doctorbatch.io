@@ -12,7 +12,7 @@
 
 	<groupId>com.zblservices.bigbluebank</groupId>
 	<artifactId>bigbluebank</artifactId>
-	<name>Doctor Batch IO - Big Blue Bank Sample</name>
+	<name>Doctor Batch IO - BigBlueBank</name>
 	<packaging>pom</packaging>
 	<version>1.0.1-SNAPSHOT</version>
 

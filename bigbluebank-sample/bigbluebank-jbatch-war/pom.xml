@@ -52,4 +52,5 @@
       </plugin>
     </plugins>
   </build>
+  <name>Doctor Batch IO - BigBlueBank - Java Batch WAR</name>
 </project>

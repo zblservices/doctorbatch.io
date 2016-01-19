@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>bigbluebank-jbatch</artifactId>
-	<name>BigBlueBank Java Batch</name>
+	<name>Doctor Batch IO - BigBlueBank - Java Batch</name>
 	<dependencies>
 		<dependency>
 			<groupId>com.zblservices.bigbluebank</groupId>
