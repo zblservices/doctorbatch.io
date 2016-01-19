@@ -16,3 +16,4 @@ RemoteSystemsTempFiles
 .factorypath
 
 *.versionsBackup
+*.releaseBackup
