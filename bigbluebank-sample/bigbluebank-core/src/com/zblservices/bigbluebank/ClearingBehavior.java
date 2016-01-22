@@ -1,9 +1,9 @@
-package com.ibm.bigbluebank;
+package com.zblservices.bigbluebank;
 
 import java.util.Properties;
 
-import com.ibm.bigbluebank.model.AccountData;
-import com.ibm.bigbluebank.model.DepositRecord;
+import com.zblservices.bigbluebank.model.AccountData;
+import com.zblservices.bigbluebank.model.DepositRecord;
 import com.zblservices.doctorbatch.io.RecordProcessor;
 
 public class ClearingBehavior implements RecordProcessor<DepositRecord,DepositRecord> {

@@ -1,8 +1,8 @@
-package com.ibm.bigbluebank.persistence;
+package com.zblservices.bigbluebank.persistence;
 
 import java.math.BigDecimal;
 
-import com.ibm.bigbluebank.model.AccountData;
+import com.zblservices.bigbluebank.model.AccountData;
 
 public interface AccountDAO {
 	/**

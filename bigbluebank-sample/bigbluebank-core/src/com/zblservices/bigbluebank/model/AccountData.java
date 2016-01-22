@@ -1,4 +1,4 @@
-package com.ibm.bigbluebank.model;
+package com.zblservices.bigbluebank.model;
 
 import java.math.BigDecimal;
 import java.util.Date;

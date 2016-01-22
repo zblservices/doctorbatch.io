@@ -1,4 +1,4 @@
-package com.ibm.bigbluebank;
+package com.zblservices.bigbluebank;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Random;
 
-import com.ibm.bigbluebank.AccountManager;
-import com.ibm.bigbluebank.model.AccountData;
-import com.ibm.bigbluebank.model.DepositRecord;
 import com.ibm.jzos.RDWOutputRecordStream;
+import com.zblservices.bigbluebank.AccountManager;
+import com.zblservices.bigbluebank.model.AccountData;
+import com.zblservices.bigbluebank.model.DepositRecord;
 
 
 public class Main {

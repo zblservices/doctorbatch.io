@@ -1,10 +1,10 @@
-package com.ibm.bigbluebank;
+package com.zblservices.bigbluebank;
 
 import java.math.BigDecimal;
 
-import com.ibm.bigbluebank.model.AccountData;
-import com.ibm.bigbluebank.persistence.AccountDAO;
-import com.ibm.bigbluebank.persistence.MemoryAccountDAO;
+import com.zblservices.bigbluebank.model.AccountData;
+import com.zblservices.bigbluebank.persistence.AccountDAO;
+import com.zblservices.bigbluebank.persistence.MemoryAccountDAO;
 
 public class AccountManager {
 	private static AccountDAO dao = new MemoryAccountDAO();

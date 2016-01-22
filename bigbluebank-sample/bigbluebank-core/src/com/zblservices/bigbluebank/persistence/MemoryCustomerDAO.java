@@ -1,4 +1,4 @@
-package com.ibm.bigbluebank.persistence;
+package com.zblservices.bigbluebank.persistence;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,9 +6,9 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Random;
 
-import com.ibm.bigbluebank.model.AccountData;
-import com.ibm.bigbluebank.model.CustomerData;
-import com.ibm.bigbluebank.model.CustomerDatas;
+import com.zblservices.bigbluebank.model.AccountData;
+import com.zblservices.bigbluebank.model.CustomerData;
+import com.zblservices.bigbluebank.model.CustomerDatas;
 
 public class MemoryCustomerDAO implements CustomerDAO {
 	private static Map<String, CustomerData> customers = 

@@ -8,12 +8,12 @@
 						<property name="FILE_NAME" value="/tmp/depositRecordData.dat" />
 						<property name="RECORD_LENGTH" value="41" />
 						<property name="RECORD_PARSER_CLASSNAME" value="com.zblservices.doctorbatch.io.mvs.RecordBytesParser"/>
-						<property name="MVS_RECORDBYTES_CLASSNAME" value="com.ibm.bigbluebank.model.DepositRecord" />
+						<property name="MVS_RECORDBYTES_CLASSNAME" value="com.zblservices.bigbluebank.model.DepositRecord" />
 					</properties>
 				</reader>
 				<processor ref="batchFWProcessor">
 					<properties>
-						<property name="RECORD_PROCESSOR" value="com.ibm.bigbluebank.ClearingBehavior" />
+						<property name="RECORD_PROCESSOR" value="com.zblservices.bigbluebank.ClearingBehavior" />
 					</properties>
 				</processor>
 				<writer ref="myChunkWriter-rdw">
@@ -21,7 +21,7 @@
 						<property name="FILE_NAME" value="/tmp/depositRecordDataOut.dat" />
 						<property name="RECORD_LENGTH" value="41" />
 						<property name="RECORD_PARSER_CLASSNAME" value="com.zblservices.doctorbatch.io.mvs.RecordBytesParser"/>
-						<property name="MVS_RECORDBYTES_CLASSNAME" value="com.ibm.bigbluebank.model.DepositRecord" />
+						<property name="MVS_RECORDBYTES_CLASSNAME" value="com.zblservices.bigbluebank.model.DepositRecord" />
 					</properties>
 				</writer>
 			</chunk>

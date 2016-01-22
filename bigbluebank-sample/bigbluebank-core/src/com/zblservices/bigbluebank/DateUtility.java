@@ -1,4 +1,4 @@
-package com.ibm.bigbluebank;
+package com.zblservices.bigbluebank;
 
 import java.util.Calendar;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.ibm.bigbluebank.persistence;
+package com.zblservices.bigbluebank.persistence;
 
 import java.math.BigDecimal;
 import java.util.Calendar;
@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Random;
 
-import com.ibm.bigbluebank.model.AccountData;
+import com.zblservices.bigbluebank.model.AccountData;
 
 public class MemoryAccountDAO implements AccountDAO {
 	private static Map<String, AccountData> accounts = 

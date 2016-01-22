@@ -1,7 +1,7 @@
-package com.ibm.bigbluebank.persistence;
+package com.zblservices.bigbluebank.persistence;
 
-import com.ibm.bigbluebank.model.CustomerData;
-import com.ibm.bigbluebank.model.CustomerDatas;
+import com.zblservices.bigbluebank.model.CustomerData;
+import com.zblservices.bigbluebank.model.CustomerDatas;
 
 public interface CustomerDAO {
 	/**
