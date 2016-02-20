@@ -42,7 +42,7 @@ public class RDWRecordItemReader<T extends RecordBytes> implements ItemReader {
 	
 	@Inject @BatchProperty(name="FILE_NAME") private String fileName;
 	@Inject @BatchProperty(name="RECORD_LENGTH") private String recordLength;
-	@Inject @BatchProperty(name=RECORD_PARSER_CLASSNAME) private String recordParserClassName;
+	@Inject @BatchProperty(name="RECORD_PARSER_CLASSNAME") private String recordParserClassName;
 	@Inject @BatchProperty(name="MVS_RECORDBYTES_CLASSNAME") private String recordBytesClassName;
 
 	

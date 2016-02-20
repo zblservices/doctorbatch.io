@@ -44,7 +44,7 @@ public class RDWRecordItemWriter<T extends RecordBytes> implements ItemWriter {
 	
 	@Inject @BatchProperty(name="FILE_NAME") private String fileName;
 	@Inject @BatchProperty(name="RECORD_LENGTH") private String recordLength;
-	@Inject @BatchProperty(name=RECORD_PARSER_CLASSNAME) private String recordParserClassName;
+	@Inject @BatchProperty(name="RECORD_PARSER_CLASSNAME") private String recordParserClassName;
 	@Inject @BatchProperty(name="MVS_RECORDBYTES_CLASSNAME") private String recordBytesClassName;
 	private FileOutputStream fileOut;
 
