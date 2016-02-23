@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>BigBlueBankClearing-JBatchWAR</name>
+	<name>bigbluebank-jbatch-war</name>
 	<comment></comment>
 	<projects>
-		<project>BigBlueBankClearing-JBatch</project>
-		<project>BigBlueBankCore</project>
+		<project>bigbluebank-jbatch</project>
+		<project>bigbluebank-core</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
