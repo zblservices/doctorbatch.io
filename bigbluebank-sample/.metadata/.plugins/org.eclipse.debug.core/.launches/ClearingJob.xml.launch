@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.ibm.ws.st.jee.batch.ui.JobLaunchConfigurationType">
+<stringAttribute key="job_file" value="/BigBlueBankClearing-JBatch/src/META-INF/batch-jobs/ClearingJob.xml"/>
+<stringAttribute key="job_file_full_path" value="/Users/timfanelli/batchlab/BigBlueBankClearing-JBatch/src/META-INF/batch-jobs/ClearingJob.xml"/>
+<mapAttribute key="job_parameters"/>
+<stringAttribute key="password" value="hpr%h2T#i"/>
+<stringAttribute key="server_ID" value="WebSphere Application Server Liberty at localhost"/>
+<stringAttribute key="user_ID" value="timfanelli"/>
+<stringAttribute key="workspace_project_name" value="BigBlueBankClearing-JBatch"/>
+</launchConfiguration>

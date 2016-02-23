@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/jobXML_1_0.xsd" id="ClearingJob" restartable="false" version="1.0">
+	<flow id="flow1">
+		<step id="step1">
+			<chunk item-count="100">
+				<reader ref="myChunkReader-rdw">
+					<properties>
+						<property name="FILE_NAME" value="/tmp/depositRecordData.dat" />
+						<property name="RECORD_LENGTH" value="41" />
+						<property name="RECORD_PARSER_CLASSNAME" value="com.ibm.doctorbatch.framework.mvs.RecordBytesParser"/>
+						<property name="MVS_RECORDBYTES_CLASSNAME" value="com.ibm.bigbluebank.model.DepositRecord" />
+					</properties>
+				</reader>
+				<processor ref="batchFWProcessor">
+					<properties>
+						<property name="RECORD_PROCESS_BEHAVIOR" value="com.ibm.bigbluebank.ClearingBehavior" />
+					</properties>
+				</processor>
+				<writer ref="myChunkWriter-rdw">
+					<properties>
+						<property name="FILE_NAME" value="/tmp/depositRecordDataOut.dat" />
+						<property name="RECORD_LENGTH" value="41" />
+						<property name="RECORD_PARSER_CLASSNAME" value="com.ibm.doctorbatch.framework.mvs.RecordBytesParser"/>
+						<property name="MVS_RECORDBYTES_CLASSNAME" value="com.ibm.bigbluebank.model.DepositRecord" />
+					</properties>
+				</writer>
+			</chunk>
+		</step>
+	</flow>
+</job>

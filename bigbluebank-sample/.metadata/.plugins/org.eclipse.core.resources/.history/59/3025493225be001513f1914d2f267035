@@ -1,0 +1,17 @@
+<batch-artifacts xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+	<ref id="batchFWProcessor"  
+			class="com.ibm.doctorbatch.framework.javabatch.etl.ETLProcessor"/>
+			
+	<ref id="myChunkReader-rdw" 	
+			class="com.ibm.doctorbatch.framework.javabatch.mvs.RDWRecordReader"/>
+
+	<ref id="myChunkWriter-rdw"     
+			class="com.ibm.doctorbatch.framework.javabatch.mvs.RDWRecordWriter"/>
+
+	<ref id="myChunkReader-mvs" 	
+			class="com.ibm.doctorbatch.framework.javabatch.mvs.MVSRecordReader"/>
+
+	<ref id="myChunkWriter-mvs"     
+			class="com.ibm.doctorbatch.framework.javabatch.mvs.MVSRecordWriter"/>
+
+</batch-artifacts>

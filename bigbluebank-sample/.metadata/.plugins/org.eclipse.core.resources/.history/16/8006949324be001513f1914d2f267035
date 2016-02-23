@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="BigBlueBankClearing-JBatchWAR">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/.apt_generated"/>
+        <dependent-module archiveName="BigBlueBankClearing-JBatch.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BigBlueBankClearing-JBatch/BigBlueBankClearing-JBatch">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BigBlueBankCore.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BigBlueBankCore/BigBlueBankCore">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="batchframework-core-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankClearing-JBatch/lib/batchframework-core-1.0-SNAPSHOT.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankCore/lib/asm-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="marshall-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankCore/lib/marshall-1.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-analysis-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankCore/lib/asm-analysis-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="batchframework-javabatch-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankClearing-JBatch/lib/batchframework-javabatch-1.0-SNAPSHOT.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jrules-engine.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankCore/lib/jrules-engine.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-tree-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankCore/lib/asm-tree-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-commons-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankCore/lib/asm-commons-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jrules-res-execution.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankCore/lib/jrules-res-execution.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-util-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankCore/lib/asm-util-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jrules-res-session-java.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankCore/lib/jrules-res-session-java.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jzos-2.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankClearing-JBatch/lib/jzos-2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="marshall-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/BigBlueBankClearing-JBatch/lib/marshall-1.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="BigBlueBankClearing-JBatchWAR"/>
+        <property name="java-output-path" value="/BigBlueBankClearing-JBatchWAR/WebContent/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>

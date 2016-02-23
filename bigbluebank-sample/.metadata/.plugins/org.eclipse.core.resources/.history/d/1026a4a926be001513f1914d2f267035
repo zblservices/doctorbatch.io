@@ -1,0 +1,17 @@
+<batch-artifacts xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+	<ref id="batchFWProcessor"  
+			class="com.zblservices.doctorbatch.io.SimpleProcessor"/>
+			
+	<ref id="myChunkReader-rdw" 	
+			class="com.zblservices.doctorbatch.io.mvs.RDWRecordReader"/>
+
+	<ref id="myChunkWriter-rdw"     
+			class="com.zblservices.doctorbatch.io.mvs.RDWRecordWriter"/>
+
+	<ref id="myChunkReader-mvs" 	
+			class="com.zblservices.doctorbatch.io.mvs.MVSRecordReader"/>
+
+	<ref id="myChunkWriter-mvs"     
+			class="com.zblservices.doctorbatch.io.mvs.MVSRecordWriter"/>
+
+</batch-artifacts>

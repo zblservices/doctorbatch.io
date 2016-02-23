@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <runtime name="WebSphere Application Server Liberty Profile"/>
+  <fixed facet="com.ibm.jee.batch"/>
+  <fixed facet="jst.utility"/>
+  <fixed facet="java"/>
+  <installed facet="java" version="1.7"/>
+  <installed facet="jst.utility" version="1.0"/>
+  <installed facet="com.ibm.jee.batch" version="1.0"/>
+</faceted-project>

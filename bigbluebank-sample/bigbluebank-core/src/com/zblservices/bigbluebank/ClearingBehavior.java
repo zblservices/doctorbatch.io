@@ -1,6 +1,7 @@
 package com.zblservices.bigbluebank;
 
 import java.util.Properties;
+import java.util.logging.Logger;
 
 import com.zblservices.bigbluebank.model.AccountData;
 import com.zblservices.bigbluebank.model.DepositRecord;
@@ -8,6 +9,7 @@ import com.zblservices.doctorbatch.io.RecordProcessor;
 
 public class ClearingBehavior implements RecordProcessor<DepositRecord,DepositRecord> {
 	AccountManager manager = new AccountManager();
+	private final static Logger LOG = Logger.getLogger(ClearingBehavior.class.getSimpleName());
 	
 	private final static String ERROR_CODE_CUSTOMER_MISMATCH = "30001";
 	
@@ -35,7 +37,7 @@ public class ClearingBehavior implements RecordProcessor<DepositRecord,DepositRe
 		AccountData accountData = manager.fetchAccountData( accountNumber );
 		
 		if ( accountData == null ) {
-			System.out.println( "Could not find account data for account number: " + accountNumber );
+			LOG.severe( "Could not find account data for account number: " + accountNumber );
 			return depositRecord;
 		}
 		
@@ -62,7 +64,7 @@ public class ClearingBehavior implements RecordProcessor<DepositRecord,DepositRe
 			depositRecord.setProcess_Status("C");
 		}
 		
-		System.out.println( "Processed deposit of " + depositRecord.getAmount() + " in account " + depositRecord.getAccount_No() + " for customer " + depositRecord.getCustomer_Id() + " status: " + depositRecord.getProcess_Status() );
+		LOG.info( "Processed deposit of " + depositRecord.getAmount() + " in account " + depositRecord.getAccount_No() + " for customer " + depositRecord.getCustomer_Id() + " status: " + depositRecord.getProcess_Status() );
 		return depositRecord;
 	}
 

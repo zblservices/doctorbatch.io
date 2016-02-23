@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <archive targetInArchive="/WEB-INF/lib/bigbluebank-core-0.0.1-SNAPSHOT.jar">
+        <dir sourceOnDisk="/Users/timfanelli/batchlab/BigBlueBankCore/target/classes" targetInArchive="/"/>
+    </archive>
+    <archive targetInArchive="/WEB-INF/lib/bigbluebank-jbatch-0.0.1-SNAPSHOT.jar">
+        <dir sourceOnDisk="/Users/timfanelli/batchlab/BigBlueBankClearing-JBatch/target/classes" targetInArchive="/"/>
+    </archive>
+    <dir sourceOnDisk="/Users/timfanelli/batchlab/BigBlueBankClearing-JBatchWAR/target/m2e-wtp/web-resources" targetInArchive="/"/>
+    <dir sourceOnDisk="/Users/timfanelli/batchlab/BigBlueBankClearing-JBatchWAR/WebContent" targetInArchive="/"/>
+    <dir sourceOnDisk="/Users/timfanelli/batchlab/BigBlueBankClearing-JBatchWAR/target/classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="/Users/timfanelli/.m2/repository/com/zblservices/doctorbatch/doctorbatch-io-core/1.0-SNAPSHOT/doctorbatch-io-core-1.0-SNAPSHOT.jar" targetInArchive="/WEB-INF/lib/doctorbatch-io-core-1.0-SNAPSHOT.jar"/>
+    <file sourceOnDisk="/Users/timfanelli/.m2/repository/com/ibm/marshall/1.0.0/marshall-1.0.0.jar" targetInArchive="/WEB-INF/lib/marshall-1.0.0.jar"/>
+    <file sourceOnDisk="/Users/timfanelli/.m2/repository/com/ibm/jzos/2.4/jzos-2.4.jar" targetInArchive="/WEB-INF/lib/jzos-2.4.jar"/>
+    <file sourceOnDisk="/Users/timfanelli/.m2/repository/com/zblservices/doctorbatch/doctorbatch-io-javabatch/1.0-SNAPSHOT/doctorbatch-io-javabatch-1.0-SNAPSHOT.jar" targetInArchive="/WEB-INF/lib/doctorbatch-io-javabatch-1.0-SNAPSHOT.jar"/>
+    <file sourceOnDisk="/Users/timfanelli/.m2/repository/com/zblservices/doctorbatch/doctorbatch-io-javabatch-mvs/1.0-SNAPSHOT/doctorbatch-io-javabatch-mvs-1.0-SNAPSHOT.jar" targetInArchive="/WEB-INF/lib/doctorbatch-io-javabatch-mvs-1.0-SNAPSHOT.jar"/>
+    <file sourceOnDisk="/Users/timfanelli/.m2/repository/com/zblservices/doctorbatch/doctorbatch-io-mvs/1.0-SNAPSHOT/doctorbatch-io-mvs-1.0-SNAPSHOT.jar" targetInArchive="/WEB-INF/lib/doctorbatch-io-mvs-1.0-SNAPSHOT.jar"/>
+</archive>

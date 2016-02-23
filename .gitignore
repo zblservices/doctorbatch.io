@@ -9,11 +9,11 @@ RemoteSystemsTempFiles
 *~
 
 # Eclipse
-.project
-.metadata
-.settings
-.classpath
-.factorypath
+#.project
+#.metadata
+#.settings
+#.classpath
+#.factorypath
 
 *.versionsBackup
 *.releaseBackup
